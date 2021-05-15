@@ -17,7 +17,7 @@ Parameters:
   FunctionIAMArn:
     Type: String
   FunctionSecurityGroupIds:
-    Type: List<String>
+    Type: List<AWS::EC2::SecurityGroup::Id>
   FunctionSubnetIds:
     Type: List<AWS::EC2::Subnet::Id>
   VpcLinkId:
