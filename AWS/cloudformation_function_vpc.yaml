@@ -53,7 +53,7 @@ Resources:
       - LFunction
     Properties:
       ApiId: !Ref Gateway
-      IntegrationType: AWS_PROXY
+      IntegrationType: HTTP_PROXY
       IntegrationMethod: POST
       IntegrationUri: !Join ['',['arn:aws:apigateway:',!Ref AWS::Region,':lambda:path/2015-03-31/functions/',!GetAtt LFunction.Arn,'/invocations']]
       ConnectionId: !Ref VpcLinkId
