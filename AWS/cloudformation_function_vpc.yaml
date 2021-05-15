@@ -58,12 +58,12 @@ Resources:
       #IntegrationUri: !Join ['',['arn:aws:apigateway:',!Ref AWS::Region,':lambda:path/2015-03-31/functions/',!GetAtt LFunction.Arn,'/invocations']]
       #ConnectionType: INTERNET
       #PayloadFormatVersion: 1.0
-  #LRoute:
-    #Type: AWS::ApiGatewayV2::Route
+  LRoute:
+    Type: AWS::ApiGatewayV2::Route
     #DependsOn:
       #- LApi
-    #Properties:
-      #ApiId: !Ref Gateway
-      #RouteKey: !Join ['',['ANY /',!Ref Prefix,!Ref FunctionName]]
-      #AuthorizationType: NONE
+    Properties:
+      ApiId: !Ref Gateway
+      RouteKey: !Join ['',['ANY /',!Ref Prefix,!Ref FunctionName]]
+      AuthorizationType: NONE
       #Target: !Join ['',['integrations/',!Ref LApi]]
