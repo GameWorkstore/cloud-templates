@@ -21,7 +21,7 @@ Parameters:
     Type: String
     Default: default
   RequirePlayerAcknowledge:
-    Type: Boolean
+    Type: String
     Default: false
 Resources:
   LMatchmakingConfiguration:
