@@ -58,7 +58,7 @@ Matchmaker Configuration:
 LMatchmakingGameMode001:
     Type: AWS::CloudFormation::Stack
     Properties:
-      TemplateURL: https://raw.githubusercontent.com/GameWorkstore/cloud-templates/main/AWS/cloudformation_matchmaker.yaml
+      TemplateURL: https://ase-test-bucket.s3.amazonaws.com/AWS/cloudformation_matchmaker.yaml
       Parameters:
         MatchmakerName: gamemode-3v3
         QueueArn: !GetAtt LGameQueue.Arn
