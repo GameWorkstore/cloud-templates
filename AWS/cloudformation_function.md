@@ -51,7 +51,7 @@ The function:
 Function:
   Type: AWS::CloudFormation::Stack
   Properties:
-    TemplateURL: https://raw.githubusercontent.com/GameWorkstore/cloud-templates/main/AWS/cloudformation_function.yaml
+    TemplateURL: https://ase-test-bucket.s3.amazonaws.com/AWS/cloudformation_function.yaml
     Parameters:
       Prefix: myUniqueBackendPrefix
       BackendBucket: mys3buildstorage
